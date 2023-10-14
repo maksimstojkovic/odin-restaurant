@@ -1,0 +1,44 @@
+/* || GENERAL */
+
+:root, html body {
+  /* Layout */
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  /* Typography */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+
+  /* Color presets */
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 4%);
+  --color-light: hsl(0, 0%, 96%);
+  --color-dark: hsl(0, 0%, 21%);
+  --color-primary: hsl(171, 100%, 41%);
+  --color-link: hsl(217, 71%, 53%);
+  --color-info: hsl(204, 86%, 53%);
+  --color-success: hsl(141, 53%, 53%);
+  --color-warning: hsl(48, 100%, 67%);
+  --color-danger: hsl(348, 100%, 61%);
+}
+
+/* || BASE LAYOUT */
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-dark);
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: var(--color-primary);
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
