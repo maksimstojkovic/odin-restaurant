@@ -7,17 +7,17 @@ const loadPage = (parent) => {
   // Create layout
   const pageDiv = appendChild(parent, 'div', 'page home');
   const bannerDiv = appendChild(pageDiv, 'div', 'banner');
-  const copyDiv = appendChild(pageDiv, 'div', 'copy');
-  const hoursDiv = appendChild(pageDiv, 'div', 'hours');
-  const locationDiv = appendChild(pageDiv, 'div', 'location');
+  const heroDiv = appendChild(pageDiv, 'div', 'hero');
+  const copyDiv = appendChild(pageDiv, 'div', 'copy card');
+  const hoursDiv = appendChild(pageDiv, 'div', 'hours card');
+  const locationDiv = appendChild(pageDiv, 'div', 'location card');
 
   // Add content
   const bannerText = appendChild(bannerDiv, 'p');
   bannerText.textContent = 'Borgir';
 
-  const bannerImage = new Image();
-  bannerImage.src = BurgerImage;
-  bannerDiv.appendChild(bannerImage);
+  const hero = appendChild(heroDiv, 'img');
+  hero.src = BurgerImage;
 
   const copyText = appendChild(copyDiv, 'p');
   copyText.textContent =
@@ -40,7 +40,7 @@ const loadPage = (parent) => {
 
   for (const day in hours) {
     const e = appendChild(hoursList, 'li');
-    e.textContent = hours[day];
+    e.textContent = `${day} - ${hours[day]}`;
   }
 
   const locationHeader = appendChild(locationDiv, 'h2');

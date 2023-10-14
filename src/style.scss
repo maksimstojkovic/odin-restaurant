@@ -46,6 +46,67 @@ html body {
   height: 100%;
 }
 
+.page {
+  margin: 20px 10%;
+  padding: 20px 10%;
+  background-color: var(--color-light);
+  border-radius: calc(2 * var(--border-radius));
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      align-self: center;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .banner {
+    padding: 10px;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--color-light);
+    background-color: var(--color-info);
+    border-radius: var(--border-radius);
+
+    p {
+      margin: 0;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.card {
+  padding: 10px;
+  // background-color: var(--color-success);
+  border-radius: var(--border-radius);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
 // NAVBAR
 
 .navbar {
@@ -53,9 +114,10 @@ html body {
   justify-content: center;
   align-items: center;
   gap: 50px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 
   .navbar-item {
-    width: 100px;
+    width: 120px;
     height: 30px;
 
     display: flex;
@@ -65,26 +127,31 @@ html body {
     background-color: var(--color-success);
     color: var(--color-light);
     font-size: 1.4rem;
-    font-weight: bold;
     border-radius: 5px;
+
+    cursor: pointer;
+
+    &.active {
+      background-color: var(--color-success);
+      font-weight: bold;
+    }
   }
 }
 
 // HOME TAB
 
 .home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  .banner {
-    p {
-      font-size: 2rem;
-      font-weight: bold;
-    }
-
+  .hero {
     img {
       height: 100px;
+    }
+  }
+
+  .hours {
+    ul {
+      list-style-type: none;
+      text-align: center;
+      padding: 0;
     }
   }
 }

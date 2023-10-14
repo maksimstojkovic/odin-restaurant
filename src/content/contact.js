@@ -11,7 +11,7 @@ const createEmployee = (name, image, role, number, email) => {
   const employeeImage = appendChild(employee, 'img');
   employeeImage.src = image;
 
-  const employeeName = appendChild(employee, 'h4');
+  const employeeName = appendChild(employee, 'h2');
   employeeName.textContent = name;
 
   const employeeRole = appendChild(employee, 'p');

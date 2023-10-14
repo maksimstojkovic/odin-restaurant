@@ -13,7 +13,7 @@ const pageFunctions = {
 const loadNavbar = (parent) => {
   parent.replaceChildren();
 
-  let navbarItem = appendChild(parent, 'div', 'navbar-item');
+  let navbarItem = appendChild(parent, 'div', 'navbar-item active');
   navbarItem.textContent = 'Home';
   navbarItem.dataset.page = 'home';
   navbarItem.addEventListener('click', loadContent);

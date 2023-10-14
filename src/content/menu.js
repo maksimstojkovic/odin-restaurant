@@ -11,7 +11,7 @@ const createMenuItem = (name, image, price, description) => {
   const menuItemImage = appendChild(menuItem, 'img');
   menuItemImage.src = image;
 
-  const menuItemName = appendChild(menuItem, 'h4');
+  const menuItemName = appendChild(menuItem, 'h2');
   menuItemName.textContent = name;
 
   const menuItemPrice = appendChild(menuItem, 'p', 'price');
