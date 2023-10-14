@@ -1,15 +1,18 @@
+import { appendChild } from './util/helper';
+import { loadPage as loadPageHome } from './content/home';
+
 console.log('test');
 
-const createIndex = (() => {
+const createIndex = () => {
   const containerDiv = document.querySelector('.container');
 
-  // Navbar
-  const navbarDiv = document.createElement('div');
-  navbarDiv.classList.add('navbar');
-  containerDiv.appendChild(navbarDiv);
+  // Create containers for navbar
+  const navbarDiv = appendChild(containerDiv, 'div', 'navbar');
+  const contentDiv = appendChild(containerDiv, 'div', 'content');
 
-  // Content
-  const contentDiv = document.createElement('div');
-  contentDiv.classList.add('content');
-  containerDiv.appendChild(contentDiv);
-})();
+  // Load home page
+  loadPageHome(contentDiv);
+};
+
+// Create page
+createIndex();
