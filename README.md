@@ -13,8 +13,8 @@ Restaurant website built completely using vanilla JS and SCSS.
 
 ## Pushing to GitHub Pages
 
-`gh-pages` branch updated using the following command in `main` branch:
+`gh-pages` branch updated using the following npm script:
 
 ```
-git subtree push --prefix dist origin gh-pages
+npm run gh
 ```
