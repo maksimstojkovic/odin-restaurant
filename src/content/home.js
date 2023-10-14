@@ -20,8 +20,8 @@ const loadPage = (parent) => {
   hero.src = BurgerImage;
 
   const copyText = appendChild(copyDiv, 'p');
-  copyText.textContent =
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum ultricies arcu, ac egestas justo eleifend non. Mauris sed eros et nunc tincidunt dictum. Nam ut ante ut velit tincidunt eleifend. Aenean vitae tortor leo. Morbi ultricies nec massa et mollis.';
+  copyText.textContent = `
+  Welcome to Borgir, where burger bliss awaits. Savor the extraordinary with our handcrafted, flavor-packed burgers. Whether you crave classics or crave adventure, our menu has something delicious for all. Join us for a memorable meal today.`;
 
   const hoursHeader = appendChild(hoursDiv, 'h2');
   hoursHeader.textContent = 'Hours';

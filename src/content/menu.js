@@ -11,14 +11,20 @@ const createMenuItem = (name, image, price, description) => {
   const menuItemImage = appendChild(menuItem, 'img');
   menuItemImage.src = image;
 
-  const menuItemName = appendChild(menuItem, 'h2');
+  const menuItemContentDiv = appendChild(menuItem, 'div', 'menu-item-content');
+
+  const menuItemName = appendChild(menuItemContentDiv, 'h2');
   menuItemName.textContent = name;
+
+  const menuItemDescription = appendChild(
+    menuItemContentDiv,
+    'p',
+    'description'
+  );
+  menuItemDescription.textContent = description;
 
   const menuItemPrice = appendChild(menuItem, 'p', 'price');
   menuItemPrice.textContent = '$' + price;
-
-  const menuItemDescription = appendChild(menuItem, 'p', 'description');
-  menuItemDescription.textContent = description;
 
   return menuItem;
 };

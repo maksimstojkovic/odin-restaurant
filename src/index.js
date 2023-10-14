@@ -1,8 +1,8 @@
 import { appendChild } from './util/helper';
 import { loadNavbar } from './ui/navbar';
-import { loadPage as loadPageHome } from './content/home';
+// import { loadPage as loadPageHome } from './content/home';
 // import { loadPage as loadPageMenu } from './content/menu';
-// import { loadPage as loadPageContactUs } from './content/contact';
+import { loadPage as loadPageContactUs } from './content/contact';
 import './style.scss';
 
 const createIndex = () => {
@@ -14,12 +14,8 @@ const createIndex = () => {
 
   // Load navbar
   loadNavbar(navbarDiv);
-
-  // Load home page
-  loadPageHome(contentDiv);
-  // loadPageMenu(contentDiv);
-  // loadPageContactUs(contentDiv);
 };
 
 // Create page
 createIndex();
+document.querySelector('.navbar').children[0].click();

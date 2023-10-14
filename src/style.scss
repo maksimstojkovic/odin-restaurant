@@ -10,7 +10,7 @@ html body {
 
   // Typography
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 16px;
 
   // Color presets
   --color-white: hsl(0, 0%, 100%);
@@ -35,15 +35,8 @@ html body {
   height: 100%;
 }
 
-.navbar {
-  width: 100%;
-  height: 50px;
-  background-color: var(--color-dark);
-}
-
 .content {
   width: 100%;
-  height: 100%;
 }
 
 .page {
@@ -78,7 +71,7 @@ html body {
     justify-content: center;
     align-items: center;
 
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: bold;
     color: var(--color-light);
     background-color: var(--color-info);
@@ -92,7 +85,6 @@ html body {
 }
 
 .card {
-  padding: 10px;
   // background-color: var(--color-success);
   border-radius: var(--border-radius);
 
@@ -102,14 +94,22 @@ html body {
   align-items: center;
 }
 
+h2,
+p {
+  margin: 0;
+}
+
 h2 {
   font-size: 1.5rem;
-  margin: 0;
 }
 
 // NAVBAR
 
 .navbar {
+  width: 100%;
+  height: 80px;
+  background-color: var(--color-dark);
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,8 +117,8 @@ h2 {
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 
   .navbar-item {
-    width: 120px;
-    height: 30px;
+    width: 140px;
+    height: 40px;
 
     display: flex;
     justify-content: center;
@@ -147,6 +147,12 @@ h2 {
     }
   }
 
+  .copy {
+    p {
+      padding: 0 10%;
+    }
+  }
+
   .hours {
     ul {
       list-style-type: none;
@@ -160,10 +166,64 @@ h2 {
 
 .menu {
   .menu-item {
+    display: grid;
+    grid-template: 1fr / 200px 3fr 1fr;
+    justify-items: center;
+    align-items: center;
+
     img {
-      height: 170px;
+      grid-row: 1 / -1;
+
+      height: 120px;
       aspect-ratio: 1;
       object-fit: scale-down;
+      background-color: black;
+    }
+
+    .menu-item-content {
+      justify-self: flex-start;
+
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      .description {
+        //   grid-column: 2 / -1;
+        font-size: 1.5rem;
+      }
+    }
+
+    .price {
+      grid-column: -2 / -1;
+      grid-row: 1 / -1;
+
+      font-size: 2.5rem;
+      font-style: italic;
+    }
+  }
+}
+
+// CONTACT US TAB
+
+.contact-us {
+  .employee {
+    width: 400px;
+
+    display: grid;
+    grid-template: 1fr / 150px 1fr;
+    justify-items: flex-start;
+    align-items: center;
+
+    img {
+      height: 120px;
+      aspect-ratio: 1;
+      object-fit: scale-down;
+    }
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
     }
   }
 }
