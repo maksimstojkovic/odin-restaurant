@@ -1,0 +1,1 @@
+console.log("test"),(()=>{const e=document.querySelector(".container"),t=document.createElement("div");t.classList.add("navbar"),e.appendChild(t);const n=document.createElement("div");n.classList.add("content"),e.appendChild(n)})();
