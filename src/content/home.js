@@ -14,14 +14,14 @@ const loadPage = (parent) => {
 
   // Add content
   const bannerText = appendChild(bannerDiv, 'p');
-  bannerText.textContent = 'Borgir';
+  bannerText.textContent = "Bobby's Burgers";
 
   const hero = appendChild(heroDiv, 'img');
   hero.src = BurgerImage;
 
   const copyText = appendChild(copyDiv, 'p');
   copyText.textContent = `
-  Welcome to Borgir, where burger bliss awaits. Savor the extraordinary with our handcrafted, flavor-packed burgers. Whether you crave classics or crave adventure, our menu has something delicious for all. Join us for a memorable meal today.`;
+  Welcome to Bobby's Burgers, where burger bliss awaits. Savor the extraordinary with our handcrafted, flavor-packed burgers. Whether you crave classics or crave adventure, our menu has something delicious for all. Join us for a memorable meal today.`;
 
   const hoursHeader = appendChild(hoursDiv, 'h2');
   hoursHeader.textContent = 'Hours';

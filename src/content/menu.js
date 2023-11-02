@@ -1,6 +1,6 @@
 import { appendChild } from '../util/helper';
 // import BurgerImage from '../res/img/burger.jpg';
-import BorgirImage from '../res/img/borgir.jpg';
+import BobbyImage from '../res/img/bobby.jpg';
 import BulkBurgerImage from '../res/img/bulk-burger.jpg';
 import LeafySaladImage from '../res/img/leafy-salad.jpg';
 
@@ -41,8 +41,8 @@ const loadPage = (parent) => {
   bannerText.textContent = 'Menu';
 
   let menuItem = createMenuItem(
-    'The Borgir',
-    BorgirImage,
+    'The Bobby',
+    BobbyImage,
     20,
     'For those looking for a feast!'
   );

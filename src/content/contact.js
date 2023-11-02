@@ -39,10 +39,10 @@ const loadPage = (parent) => {
   bannerText.textContent = 'Contact Us';
 
   let employee = createEmployee(
-    'Ryder Tindal',
+    'Bobby Burg',
     DirectorImage,
     'Director',
-    'RyderTindal@email.com',
+    'BobbyBurg@email.com',
     '(02) 9999 9999'
   );
   pageDiv.appendChild(employee);
